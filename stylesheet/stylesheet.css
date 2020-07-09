@@ -1,0 +1,185 @@
+/* 基本コード（スマホ・タブレット用） */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fafafa;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.border {
+    width: 70px;
+    border-bottom: 3px solid #EC715F;
+    margin :0 auto;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #EC715F;
+}
+
+.hd-container {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hd-container img {
+    height: 100%;
+
+}
+
+
+.hd-right {
+    display: block;
+    margin: auto 0 auto auto;
+
+}
+
+/* humberger_start */
+#humberger {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#humberger div {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#humberger div:nth-of-type(1) {
+    top : 0;
+}
+#humberger div:nth-of-type(2) {
+    top: 10px;
+}
+#humberger div:nth-of-type(3) {
+    bottom: 0;
+}
+/* humberger_end */
+
+.mv-container {
+    /* width: 100%; */
+    height: 650px;
+    background-image: url(../img/code.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mv-contents {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+
+.mv-contents p {
+    font-size: 18px;
+    color: #fafafa;
+    padding-top: 10px;
+}
+
+.pf-container {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.pf-contents {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.pf-contents p {
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.pf-contents .pf-img {
+    width: 300px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.pf-contents .websuku {
+    background-image: url(../img/websuku.png);
+    margin-bottom: 10px;
+}
+
+.pf-contents .webcamp {
+    background-image: url(../img/webcamp.png);
+    margin-bottom: 10px;
+}
+
+.pf-contents .webcamp-mother {
+    background-image: url(../img/webcamp-mother.png);
+}
+
+.ft-container {
+    width:100%;
+}
+
+.ft-contents {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 0;
+}
+
+
+.ft-contents h3 {
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.ft-contents p {
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.ft-contents i {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/* widtth 767px以上の場合（PC用） */
+@media screen and (min-width:767px) {
+
+
+}
