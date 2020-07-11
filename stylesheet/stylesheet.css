@@ -1,22 +1,19 @@
-/* 基本コード（スマホ・タブレット用） */
+/* 基本コード */
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-
 h1 {
     font-size: 40px;
     color: #fafafa;
     font-family: 'Raleway', sans-serif;
 }
-
 h2 {
     font-size: 32px;
     color: #000;
     font-family: 'Raleway', sans-serif;
 }
-
 .border {
     width: 70px;
     border-bottom: 3px solid #EC715F;
@@ -24,13 +21,15 @@ h2 {
     margin-top: 8px;
     margin-bottom: 30px;
 }
-
-
 header {
     width: 100%;
     height: 50px;
     background-color: #EC715F;
 }
+nav {
+    display: none;
+}
+
 
 .hd-container {
     width: 90%;
@@ -38,20 +37,21 @@ header {
     margin: 0 auto;
     display: flex;
 }
-
 .hd-container img {
     height: 100%;
-
 }
-
-
+.hd-left {
+    margin-right: auto;
+}
 .hd-right {
-    display: block;
-    margin: auto 0 auto auto;
+    margin: auto 0;
 
 }
 
-/* humberger_start */
+/* width 767px以下の場合（スマホ・タブレット用） */
+
+
+/* ------ humberger_start ------ */
 #humberger {
     position: relative;
     height: 24px;
@@ -78,48 +78,44 @@ header {
 #humberger div:nth-of-type(3) {
     bottom: 0;
 }
-/* humberger_end */
+/* ------ humberger_end ------ */
 
 .mv-container {
-    /* width: 100%; */
+    width: 100%;
     height: 650px;
     background-image: url(../img/code.png);
     background-position: center;
     background-size: cover;
 }
-
 .mv-contents {
     width: 90%;
     margin: 0 auto;
     text-align: center;
     padding-top: 200px;
 }
-
-
 .mv-contents p {
     font-size: 18px;
     color: #fafafa;
     padding-top: 10px;
 }
 
+
+
 .pf-container {
     width: 100%;
     background-color: #f0f0f0;
 }
-
 .pf-contents {
     width: 90%;
     margin: 0 auto;
     text-align: center;
     padding: 90px 0;
 }
-
 .pf-contents p {
     font-size: 16px;
     color: #000;
     padding-bottom: 30px;
 }
-
 .pf-contents .pf-img {
     width: 300px;
     height: 250px;
@@ -127,59 +123,280 @@ header {
     background-size: cover;
     margin: 0 auto;
 }
-
+.pf-contents .sketch {
+    background-image: url(../img/sketch.jpg);
+    display: none;
+}
 .pf-contents .websuku {
     background-image: url(../img/websuku.png);
     margin-bottom: 10px;
 }
-
+.pf-contents .write {
+    background-image: url(../img/write.jpg);
+    display: none;
+}
 .pf-contents .webcamp {
     background-image: url(../img/webcamp.png);
     margin-bottom: 10px;
 }
-
+.pf-contents .talk {
+    background-image: url(../img/talk.jpg);
+    display: none;
+}
 .pf-contents .webcamp-mother {
     background-image: url(../img/webcamp-mother.png);
 }
 
+
+
+
+
 .ft-container {
     width:100%;
 }
-
 .ft-contents {
     width: 90%;
     margin: 0 auto;
     text-align: center;
     padding: 90px 0;
 }
-
-
+.ft-contents .strength {
+    width: 320px;
+    height: auto;
+    display: inline-block;
+}
 .ft-contents h3 {
     font-size: 20px;
     color: #000;
     padding-bottom: 10px;
 }
-
 .ft-contents p {
     font-size: 16px;
     color: #000;
     padding-bottom: 30px;
 }
-
 .ft-contents i {
     font-size: 60px;
     padding-bottom: 10px;
 }
+.strength p {
+    text-align: left;
+}
 
 
 
+.prf-container {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+.prf-contents {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 0;
+}
+.prf-contents .prf-img {
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/my-icon.jpg);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.prf-contents h3 {
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
 
 
 
+.ct-container {
+    width: 100%;
+}
+.ct-contents {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 0;
+}
+.ct-contents h3 {
+    padding-bottom: 5px;
+}
+.ct-contents p {
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 30px;
+}
+.ct-contents p {
+    padding-bottom: 30px;
+}
+.ct-contents i {
+    font-size: 50px;
+}
+.ct-contents .fa-twitter {
+    margin: 0 8px;
+}
 
 
-/* widtth 767px以上の場合（PC用） */
+
+footer {
+    line-height: 60px;
+    background-color: #EC715F;
+    display: block;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+/* width 767px以上の場合（PC用） */
 @media screen and (min-width:767px) {
+    header {
+        width: 100%;
+        height: 70px;
+        background-color: #EC715F;
+    }
 
+    .hd-container {
+        width: 1024px;
+        height: 70px;
+    }
+
+    #humberger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+    
+    nav ul {
+        display: flex;
+        color: #fafafa;
+        font-size: 16px;
+        list-style: none;
+        align-items: right;
+        justify-content: right;
+    }
+    
+    nav a {
+        color: #fafafa;
+        text-decoration: none;
+        padding: 0 30px;
+    }
+
+
+
+    .mv-container {
+        background-image: url(../img/mv.png);
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .mv-contents p {
+        font-size: 20px;
+    }
+    
+
+
+    .pf-contents {
+        width: 920px;
+        font-size: 0px;
+    }
+    .pf-contents .pf-img {
+        display: inline-block;
+        width: 300px;
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    .pf-contents .sketch {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .pf-contents .websuku {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .pf-contents .write {
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    .pf-contents .webcamp {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    .pf-contents .talk {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    .pf-contents .webcamp-mother {
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+
+
+    .ft-contents {
+        width: 980px;
+        font-size: 0px;
+    }
+    .ft-contents .str2 {
+        padding: 0 10px;
+    } 
+
+
+
+    .prf-contents {
+        width: 1024px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 90px 0;
+    }
+    .prf-blc {
+        display: flex;
+        padding-top: 10px;
+    }
+    .prf-img {
+        display: flex;
+        margin-top: 0px;
+    }
+    .prf-dtl {
+        width: 512px;
+        text-align: left;
+    }
+    .prf-contents h3 {
+        font-size: 20px;
+    }
+
+
+
+    .ct-contents {
+        width: 800px;
+    }
+    .ct-blc {
+        display: flex;
+        margin: 0 auto;
+    }
+    .ct-ctt {
+        width: 400px;
+        
+    }
+    .ct-sns {
+        width: 400px;
+    }
+    
+    
+    
 
 }
